@@ -1,0 +1,184 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    margin-top: 75px;
+    color: white;
+    
+}
+h1
+{
+    text-align: center;
+}
+#titleCard
+{
+    color: azure;
+    font-size: 200px;
+    margin: 150px auto
+}
+#titleSub
+{
+    text-align: center;
+    color: azure;
+    font-size: 50px;
+    margin: 150px auto
+}
+p
+{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.frame
+{
+    background-color: #f0f0f0; /* inner page color */
+	margin: 40px;
+	padding: 20px;
+	border-radius: 12px;
+}
+
+/*Media Stuffs*/
+#bg-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	z-index: -1;
+    filter: blur(2px);
+}
+.video-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	z-index: 0;
+}
+
+.content {
+	position: relative;
+	z-index: 2;
+}
+iframe {
+	display: block;
+	margin: 30px auto;
+}
+/*navbar stuffs*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 15px 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+    transform: translateY(-2px);
+}
+
+/*table stuffs*/
+table 
+{
+	width: 80%;
+	margin: 30px auto;
+	border-collapse: collapse;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+th, td {
+	padding: 12px 20px;
+	border: 1px solid #333;
+	text-align: center;
+}
+tbody tr:hover {
+	background: #ddd;
+}
+
+.Mcl
+{
+    background-color: orange   ;
+}
+.Rbr
+{
+    background-color: blue;
+}
+.Mer
+{
+    background-color: lightseagreen;
+}
+.Fer
+{
+    background-color: red;
+}
+.And
+{
+    background-color: yellow;
+}
+.Mey
+{
+    background-color: lightskyblue;
+}
+
+/*Article panel stuff*/
+.panel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.article-panel {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.article-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.article-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-align: left;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Garage 11 - Reach out/Get involved</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<style>
+    h1
+    {
+        text-align: left;
+    }
+</style>
+
+<body>
+    <h1>Send a message to the site creator here</h1>
+    <form id="contact-form">
+        <fieldset>
+            <legend>Name & Email</legend>
+            <strong>Name</strong><br>
+            <input type="text" name="nameBox" size="30" /> <br />
+            <br>
+            <strong>Email</strong><br>
+            <input type="email"name="email" id="email" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Subject</legend>
+            <strong>Subject:</strong><br>
+            <select id="subject" name="subject">
+                <option value="feedback">Feedback</option>
+                <option value="partnership">Partnership</option>
+                <option value="general">General Question</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Extra info</legend>
+            <strong>How are you connected to Motorsports?</strong><br>
+            <input type="radio" name="info" label="Driver"/>Driver<br/>
+            <input type="radio" name="info" label="Engineer"/>Engineer<br/>
+            <input type="radio" name="info" label="Sponsor"/>Sponsor<br/>
+            <input type="radio" name="info" label="Fan"/>Fan<br/>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Message</legend>
+            <strong>What do you want to tell us?</strong><br>
+            <textarea id="message" name="message" rows="6" cols="50" required></textarea><br><br>
+        </fieldset>
+	    <input type="submit" value="Send Message">
+    </form>
+    <div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="About Me.html">About Me</a>
+		<a href="standings.html">Standings</a>
+		<a href="Why This Website.html">Why This Website</a>
+        <a href="form.html">Connect with us</a>
+        <a href="articles.html">Useful Articles</a>
+	</div>
+</body>
